@@ -1,31 +1,74 @@
 Gestão de Demandas Rurais
+# 🌱 Gestão de Demandas Rurais // AgrGen
 
-Sobre o projeto
+<p align="center">
+  <strong>Uma plataforma para conectar agricultores e associações rurais.</strong>
+  <br />
+  Organizando solicitações e facilitando o atendimento das necessidades do campo.
+</p>
 
-Nosso projeto busca facilitar a comunicação entre agricultores e associações rurais, permitindo que os agricultores enviem solicitações de acordo com suas necessidades, como água, equipamentos, infraestrutura e assistência técnica.
+---
 
-As associações podem acessar o sistema e gerenciar as requisições, atualizando seus status entre Pendente, Em análise e Concluída.
+## 📌 Sobre o projeto
 
-Tecnologias utilizadas
+Nosso projeto busca facilitar a comunicação entre agricultores e associações rurais. Por meio da plataforma, os agricultores podem enviar solicitações de acordo com suas necessidades, enquanto as associações podem visualizar e gerenciar as requisições recebidas.
 
-React: desenvolvimento da interface.
+## ✨ Funcionalidades
 
-CSS: estilização das telas.
+- 👤 Cadastro e login de associações.
+- 📝 Envio de requisições pelos agricultores.
+- 🌾 Registro de necessidades, contato e CAF.
+- 📋 Visualização e gerenciamento dos pedidos.
+- 🔄 Atualização do status das requisições.
 
-Node.js e Express: criação do servidor e da API.
+## 🛠️ Tecnologias utilizadas
 
-SQLite: armazenamento dos dados.
+| Tecnologia | Utilização |
+|---|---|
+| ⚛️ React | Interface do sistema |
+| 🎨 CSS | Estilização das telas |
+| 🟢 Node.js e Express | Servidor e API |
+| 🗄️ SQLite | Armazenamento dos dados |
 
-JWT e bcryptjs: autenticação e proteção das senhas.
+## 🚀 Como executar
 
-Git e GitHub: versionamento e compartilhamento do código.
+**1. Instale as dependências do front-end**
 
-Como executar
+Na pasta principal do projeto:
 
-Instale as dependências com npm install na pasta principal e na pasta backend.
+```bash
+npm install
+```
 
-Inicie o servidor executando node server.js dentro de backend e, em outro terminal, execute npm start na pasta principal.
+**2. Instale as dependências do back-end**
 
-Objetivo final
+```bash
+cd backend
+npm install
+```
 
-Com esse projeto, buscamos aplicar nossos conhecimentos de desenvolvimento web e criar uma solução prática para organizar as demandas rurais e facilitar o atendimento aos agricultores.
+**3. Inicie o servidor**
+
+Ainda na pasta `backend`:
+
+```bash
+node server.js
+```
+
+**4. Inicie o front-end**
+
+Abra outro terminal na pasta principal:
+
+```bash
+npm start
+```
+
+> É necessário manter o front-end e o back-end em execução ao mesmo tempo.
+
+---
+
+<p align="center">
+  🌱 <strong>Gestão de Demandas Rurais</strong>
+  <br />
+  <sub>Desenvolvido como projeto acadêmico.</sub>
+</p>
