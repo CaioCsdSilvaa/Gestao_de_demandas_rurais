@@ -153,17 +153,21 @@ function App() {
               disabled={agricultor}
             />
 
-            <label className="agricultor">
-              <input
-                type="checkbox"
-                checked={agricultor}
-                onChange={(e) => setAgricultor(e.target.checked)}
-              />
-              Sou agricultor
-            </label>
-
             {mensagem && <p>{mensagem}</p>}
             <button>Entrar</button>
+
+            <button
+              type="button"
+              onClick={() => {
+                setAgricultor(false);
+                setMensagem("");
+                setTela("problema");
+              }}
+            >
+              Sou agricultor
+            </button>
+
+            
           </form>
 
           <button className="link" onClick={() => {
@@ -252,17 +256,15 @@ function App() {
             {mensagem && <p>{mensagem}</p>}
             <button>Enviar</button>
 
-          
-<button type="button" onClick={() => {
-  setMensagem("");
-  setAgricultor(false);
-  setEmail("");
-  setSenha("");
-  setTela("login");
-}}>
-  Retomar
-</button>
-
+            <button type="button" onClick={() => {
+              setMensagem("");
+              setAgricultor(false);
+              setEmail("");
+              setSenha("");
+              setTela("login");
+            }}>
+              Retomar
+            </button>
 
           </form>
         </section>

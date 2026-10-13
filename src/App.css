@@ -161,6 +161,11 @@ button:hover {
   background: #304a24;
   overflow-wrap: anywhere;
   margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-20px);
+  border: 2px solid #49693a;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
 }
 
 .cartao h3,
