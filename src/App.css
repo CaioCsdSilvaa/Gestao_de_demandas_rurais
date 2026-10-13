@@ -160,6 +160,7 @@ button:hover {
   border-radius: 20px;
   background: #304a24;
   overflow-wrap: anywhere;
+  margin-bottom: 20px;
 }
 
 .cartao h3,

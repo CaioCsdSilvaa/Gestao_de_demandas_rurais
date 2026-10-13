@@ -217,19 +217,20 @@ function App() {
 
       {tela === "problema" && (
         <section className="caixa problema">
-          <h3>Área do agricultor</h3>
+          
+          <h3>Solicitação</h3>
 
           <form onSubmit={enviarPedido}>
-            <label>Nome:</label>
+            <label>Nome do proprietário:</label>
             <input value={nome} onChange={(e) => setNome(e.target.value)} required />
 
-            <label>Email ou Número:</label>
+            <label>Email:</label>
             <input value={contato} onChange={(e) => setContato(e.target.value)} required />
 
             <label>CAF:</label>
             <input value={caf} onChange={(e) => setCaf(e.target.value)} />
 
-            <label>Necessidades:</label>
+            <label>Requisição:</label>
             <select value={necessidade} onChange={(e) => setNecessidade(e.target.value)} required>
               <option value="">Selecione</option>
               <option>Água</option>
@@ -244,25 +245,45 @@ function App() {
             <textarea
               value={descricao}
               onChange={(e) => setDescricao(e.target.value)}
-              placeholder="Escreva qual é o seu problema."
+              placeholder="Descreva sua solicitação com detalhes."
               required
             />
 
             {mensagem && <p>{mensagem}</p>}
             <button>Enviar</button>
+
+          
+<button type="button" onClick={() => {
+  setMensagem("");
+  setAgricultor(false);
+  setEmail("");
+  setSenha("");
+  setTela("login");
+}}>
+  Retomar
+</button>
+
+
           </form>
         </section>
       )}
 
       {tela === "confirmacao" && (
         <section className="caixa">
-          <h2>Requisição enviada!</h2>
+          <h2>Em breve entraremos em contato.</h2>
           <p>{mensagem}</p>
           <button onClick={() => {
             setMensagem("");
             setTela("problema");
           }}>
             Enviar outra
+          </button>
+
+          <button onClick={() => {
+            setMensagem("");
+            setTela("login");
+          }}>
+            Retomar
           </button>
         </section>
       )}
